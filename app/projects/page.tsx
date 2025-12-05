@@ -1,6 +1,6 @@
 import projectsData from '@/data/projectsData'
-import Card from '@/components/Card'
 import Link from '@/components/Link'
+import Image from '@/components/Image'
 import { genPageMetadata } from 'app/seo'
 
 export const metadata = genPageMetadata({ title: 'Our Apps' })
@@ -19,35 +19,67 @@ export default function Projects() {
           </p>
         </div>
         <div className="container py-12">
-          <div className="-m-4 flex flex-wrap">
+          <div className="space-y-8">
             {projectsData.map((project) => (
-              <div key={project.title} className="md max-w-[544px] p-4 md:w-1/2">
-                <div className="h-full overflow-hidden rounded-md border-2 border-gray-200/60 dark:border-gray-700/60">
-                  <Card
-                    title={project.title}
-                    description={project.description}
-                    imgSrc={project.imgSrc}
-                    href={project.href}
-                  />
-                  {project.technologies && (
-                    <div className="px-6 pb-4">
-                      <div className="mb-2 text-sm font-semibold text-gray-700 dark:text-gray-300">
-                        Technologies:
-                      </div>
-                      <div className="flex flex-wrap gap-2">
-                        {project.technologies.map((tech) => (
-                          <span
-                            key={tech}
-                            className="rounded-full bg-primary-100 px-3 py-1 text-xs font-medium text-primary-800 dark:bg-primary-900 dark:text-primary-200"
-                          >
-                            {tech}
-                          </span>
-                        ))}
-                      </div>
+              <div
+                key={project.title}
+                className="h-full w-full overflow-hidden rounded-md border-2 border-gray-200/60 dark:border-gray-700/60"
+              >
+                <div className="flex flex-col md:flex-row">
+                  {project.imgSrc && (
+                    <div className="md:w-1/3 flex-shrink-0">
+                      {project.href ? (
+                        <Link href={project.href} aria-label={`Link to ${project.title}`}>
+                          <Image
+                            alt={project.title}
+                            src={project.imgSrc}
+                            className="object-cover object-center w-full h-48 md:h-full"
+                            width={544}
+                            height={306}
+                          />
+                        </Link>
+                      ) : (
+                        <Image
+                          alt={project.title}
+                          src={project.imgSrc}
+                          className="object-cover object-center w-full h-48 md:h-full"
+                          width={544}
+                          height={306}
+                        />
+                      )}
                     </div>
                   )}
-                  {project.appStoreLinks && (
-                    <div className="px-6 pb-6">
+                  <div className="flex-1 p-6">
+                    <h2 className="mb-3 text-2xl leading-8 font-bold tracking-tight">
+                      {project.href ? (
+                        <Link href={project.href} aria-label={`Link to ${project.title}`}>
+                          {project.title}
+                        </Link>
+                      ) : (
+                        project.title
+                      )}
+                    </h2>
+                    <p className="prose mb-4 max-w-none text-gray-500 dark:text-gray-400">
+                      {project.description}
+                    </p>
+                    {project.technologies && project.technologies.length > 0 && (
+                      <div className="mb-4">
+                        <div className="mb-2 text-sm font-semibold text-gray-700 dark:text-gray-300">
+                          Technologies:
+                        </div>
+                        <div className="flex flex-wrap gap-2">
+                          {project.technologies.map((tech) => (
+                            <span
+                              key={tech}
+                              className="rounded-full bg-primary-100 px-3 py-1 text-xs font-medium text-primary-800 dark:bg-primary-900 dark:text-primary-200"
+                            >
+                              {tech}
+                            </span>
+                          ))}
+                        </div>
+                      </div>
+                    )}
+                    {project.appStoreLinks && (
                       <div className="flex gap-4">
                         {project.appStoreLinks.ios && (
                           <Link
@@ -66,8 +98,8 @@ export default function Projects() {
                           </Link>
                         )}
                       </div>
-                    </div>
-                  )}
+                    )}
+                  </div>
                 </div>
               </div>
             ))}
