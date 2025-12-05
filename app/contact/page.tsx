@@ -27,7 +27,7 @@ export default function ContactPage() {
     setErrorMessage('')
 
     try {
-      const response = await fetch('/api/contact', {
+      const response = await fetch('https://api.bringwise.app/contact', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
