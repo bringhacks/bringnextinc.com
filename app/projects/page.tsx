@@ -27,13 +27,13 @@ export default function Projects() {
               >
                 <div className="flex flex-col md:flex-row">
                   {project.imgSrc && (
-                    <div className="md:w-1/3 flex-shrink-0">
+                    <div className="flex-shrink-0 md:w-1/3">
                       {project.href ? (
                         <Link href={project.href} aria-label={`Link to ${project.title}`}>
                           <Image
                             alt={project.title}
                             src={project.imgSrc}
-                            className="object-cover object-center w-full h-48 md:h-full"
+                            className="h-48 w-full object-cover object-center md:h-full"
                             width={544}
                             height={306}
                           />
@@ -71,7 +71,7 @@ export default function Projects() {
                           {project.technologies.map((tech) => (
                             <span
                               key={tech}
-                              className="rounded-full bg-primary-100 px-3 py-1 text-xs font-medium text-primary-800 dark:bg-primary-900 dark:text-primary-200"
+                              className="bg-primary-100 text-primary-800 dark:bg-primary-900 dark:text-primary-200 rounded-full px-3 py-1 text-xs font-medium"
                             >
                               {tech}
                             </span>
@@ -84,7 +84,7 @@ export default function Projects() {
                         {project.appStoreLinks.ios && (
                           <Link
                             href={project.appStoreLinks.ios}
-                            className="text-sm font-medium text-primary-600 hover:text-primary-500 dark:text-primary-400"
+                            className="primary-600 hover:text-primary-500 dark:text-primary-400 text-sm font-medium"
                           >
                             App Store →
                           </Link>
@@ -92,7 +92,7 @@ export default function Projects() {
                         {project.appStoreLinks.android && (
                           <Link
                             href={project.appStoreLinks.android}
-                            className="text-sm font-medium text-primary-600 hover:text-primary-500 dark:text-primary-400"
+                            className="primary-600 hover:text-primary-500 dark:text-primary-400 text-sm font-medium"
                           >
                             Google Play →
                           </Link>

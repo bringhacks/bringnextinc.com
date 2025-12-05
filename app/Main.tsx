@@ -14,23 +14,23 @@ export default function Home() {
         <div className="mx-auto max-w-4xl text-center">
           <h1 className="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl md:text-6xl lg:text-7xl dark:text-gray-100">
             <span className="block">Bring Next LLC</span>
-            <span className="block text-primary-500 dark:text-primary-400">
+            <span className="text-primary-500 dark:text-primary-400 block">
               Mobile Apps That Make a Difference
             </span>
           </h1>
-          <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-gray-600 dark:text-gray-300 sm:text-xl">
+          <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-gray-600 sm:text-xl dark:text-gray-300">
             {siteMetadata.description}
           </p>
           <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row sm:gap-x-6">
             <Link
               href="/projects"
-              className="w-full rounded-md bg-primary-600 px-6 py-3 text-center text-base font-semibold text-white shadow-sm hover:bg-primary-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600 dark:bg-primary-500 dark:hover:bg-primary-400 sm:w-auto"
+              className="bg-primary-600 hover:bg-primary-500 focus-visible:outline-primary-600 dark:bg-primary-500 dark:hover:bg-primary-400 w-full rounded-md px-6 py-3 text-center text-base font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 sm:w-auto"
             >
               Explore Our Apps
             </Link>
             <Link
               href="/contact"
-              className="w-full text-center text-base font-semibold leading-6 text-gray-900 dark:text-gray-100 sm:w-auto"
+              className="leading-6 font-semibold text-gray-900 w-full text-center text-base sm:w-auto dark:text-gray-100"
             >
               Get in Touch <span aria-hidden="true">→</span>
             </Link>
@@ -76,16 +76,16 @@ export default function Home() {
                   </dt>
                   <dd className="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-600 dark:text-gray-300">
                     <p className="flex-auto">
-                      Our apps are built with mobile-first principles, optimized for iOS and Android to
-                      ensure seamless performance across all devices.
+                      Our apps are built with mobile-first principles, optimized for iOS and Android
+                      to ensure seamless performance across all devices.
                     </p>
                   </dd>
                 </div>
               </ScrollAnimation>
               <ScrollAnimation direction="up" delay={100}>
                 <div className="flex flex-col">
-                  <dt className="text-base font-semibold leading-7 text-gray-900 dark:text-gray-100">
-                    <div className="mb-6 flex h-10 w-10 items-center justify-center rounded-lg bg-primary-600 dark:bg-primary-500">
+                  <dt className="text-base leading-7 font-semibold text-gray-900 dark:text-gray-100">
+                    <div className="bg-primary-600 dark:bg-primary-500 mb-6 flex h-10 w-10 items-center justify-center rounded-lg">
                       <svg
                         className="h-6 w-6 text-white"
                         fill="none"
@@ -112,8 +112,8 @@ export default function Home() {
               </ScrollAnimation>
               <ScrollAnimation direction="up" delay={200}>
                 <div className="flex flex-col">
-                  <dt className="text-base font-semibold leading-7 text-gray-900 dark:text-gray-100">
-                    <div className="mb-6 flex h-10 w-10 items-center justify-center rounded-lg bg-primary-600 dark:bg-primary-500">
+                  <dt className="text-base leading-7 font-semibold text-gray-900 dark:text-gray-100">
+                    <div className="bg-primary-600 dark:bg-primary-500 mb-6 flex h-10 w-10 items-center justify-center rounded-lg">
                       <svg
                         className="h-6 w-6 text-white"
                         fill="none"
@@ -189,7 +189,7 @@ export default function Home() {
                     <div className="mt-6">
                       <Link
                         href={project.href || '#'}
-                        className="text-base font-semibold text-primary-600 hover:text-primary-500 dark:text-primary-400"
+                        className="primary-600 hover:text-primary-500 dark:text-primary-400 text-base font-semibold"
                       >
                         Learn more <span aria-hidden="true">→</span>
                       </Link>
@@ -203,7 +203,7 @@ export default function Home() {
             <div className="mt-12 text-center">
               <Link
                 href="/projects"
-                className="text-base font-semibold text-primary-600 hover:text-primary-500 dark:text-primary-400"
+                className="primary-600 hover:text-primary-500 dark:text-primary-400 text-base font-semibold"
               >
                 View All Apps <span aria-hidden="true">→</span>
               </Link>

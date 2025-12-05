@@ -72,10 +72,7 @@ export async function POST(request: NextRequest) {
     //   `,
     // })
 
-    return NextResponse.json(
-      { message: 'Contact form submitted successfully' },
-      { status: 200 }
-    )
+    return NextResponse.json({ message: 'Contact form submitted successfully' }, { status: 200 })
   } catch (error) {
     console.error('Contact form error:', error)
     return NextResponse.json(
@@ -84,4 +81,3 @@ export async function POST(request: NextRequest) {
     )
   }
 }
-
