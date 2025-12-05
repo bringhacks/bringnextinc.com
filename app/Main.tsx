@@ -14,7 +14,7 @@ export default function Home() {
           <h1 className="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl md:text-6xl lg:text-7xl dark:text-gray-100">
             <span className="block">Bring Next LLC</span>
             <span className="block text-primary-500 dark:text-primary-400">
-              Mobile App Development
+              Mobile Apps That Make a Difference
             </span>
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-gray-600 dark:text-gray-300 sm:text-xl">
@@ -25,7 +25,7 @@ export default function Home() {
               href="/projects"
               className="w-full rounded-md bg-primary-600 px-6 py-3 text-center text-base font-semibold text-white shadow-sm hover:bg-primary-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600 dark:bg-primary-500 dark:hover:bg-primary-400 sm:w-auto"
             >
-              View Our Work
+              Explore Our Apps
             </Link>
             <Link
               href="/contact"
@@ -37,16 +37,16 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Features/Services Section */}
+      {/* Features Section */}
       <section className="py-12 md:py-20">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl dark:text-gray-100">
-              Why Choose Bring Next?
+              About Our Apps
             </h2>
             <p className="mt-4 text-lg leading-8 text-gray-600 dark:text-gray-300">
-              We specialize in creating innovative B2C mobile applications that deliver
-              exceptional user experiences.
+              We create innovative B2C mobile applications that deliver exceptional user
+              experiences and solve real-world problems.
             </p>
           </div>
           <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
@@ -68,12 +68,12 @@ export default function Home() {
                       />
                     </svg>
                   </div>
-                  Mobile-First Expertise
+                  Mobile-First Design
                 </dt>
                 <dd className="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-600 dark:text-gray-300">
                   <p className="flex-auto">
-                    We build native and cross-platform mobile applications optimized for iOS and
-                    Android, ensuring seamless performance across all devices.
+                    Our apps are built with mobile-first principles, optimized for iOS and Android to
+                    ensure seamless performance across all devices.
                   </p>
                 </dd>
               </div>
@@ -120,11 +120,11 @@ export default function Home() {
                       />
                     </svg>
                   </div>
-                  Innovative Solutions
+                  Innovation & Quality
                 </dt>
                 <dd className="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-600 dark:text-gray-300">
                   <p className="flex-auto">
-                    We leverage cutting-edge technologies and best practices to deliver scalable,
+                    We leverage cutting-edge technologies and best practices to create scalable,
                     maintainable, and future-proof mobile applications.
                   </p>
                       </dd>
@@ -139,11 +139,11 @@ export default function Home() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl dark:text-gray-100">
-              Our Portfolio
+              Our Apps
             </h2>
             <p className="mt-4 text-lg leading-8 text-gray-600 dark:text-gray-300">
-              Explore our featured mobile applications that showcase our expertise in B2C app
-              development.
+              Discover our collection of innovative mobile applications designed to enhance
+              productivity, creativity, and entertainment.
             </p>
           </div>
           <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-8 lg:max-w-none lg:grid-cols-3">
@@ -194,7 +194,7 @@ export default function Home() {
               href="/projects"
               className="text-base font-semibold text-primary-600 hover:text-primary-500 dark:text-primary-400"
           >
-              View All Projects <span aria-hidden="true">→</span>
+              View All Apps <span aria-hidden="true">→</span>
           </Link>
           </div>
         </div>
@@ -205,11 +205,10 @@ export default function Home() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl overflow-hidden rounded-2xl bg-gray-900 px-6 py-16 text-center sm:px-12 sm:py-20 dark:bg-gray-800">
             <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-              Ready to Build Your Next Mobile App?
+              Get in Touch
             </h2>
             <p className="mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-300">
-              Let's discuss how we can bring your mobile app idea to life. Get in touch with us
-              today.
+              Have questions, feedback, or partnership inquiries? We'd love to hear from you.
             </p>
             <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row sm:gap-x-6">
               <Link

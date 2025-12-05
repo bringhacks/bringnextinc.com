@@ -3,7 +3,7 @@ const siteMetadata = {
   title: 'Bring Next LLC',
   author: 'Bring Next LLC',
   headerTitle: 'Bring Next',
-  description: 'B2C Mobile Application Development Company. We create innovative mobile apps that deliver exceptional user experiences.',
+  description: 'Bring Next LLC owns and operates innovative B2C mobile applications including BringHacks, BestLook, and PicToWord.',
   language: 'en-us',
   theme: 'system', // system, dark or light
   siteUrl: 'https://bringnextinc.com',

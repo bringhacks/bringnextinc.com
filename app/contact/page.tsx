@@ -57,8 +57,8 @@ export default function ContactPage() {
             Contact Us
           </h1>
           <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
-            Have a project in mind? We'd love to hear from you. Get in touch and let's discuss how
-            we can bring your mobile app idea to life.
+            Have questions, feedback, or partnership inquiries? We'd love to hear from you. Get in
+            touch with us today.
           </p>
         </div>
         <div className="container py-12">
@@ -90,7 +90,7 @@ export default function ContactPage() {
                   <h3 className="mb-2 text-lg font-semibold text-gray-900 dark:text-gray-100">
                     Business Focus
                   </h3>
-                  <p className="text-gray-600 dark:text-gray-300">B2C Mobile Application Development</p>
+                  <p className="text-gray-600 dark:text-gray-300">B2C Mobile Applications</p>
                 </div>
               </div>
             </div>
