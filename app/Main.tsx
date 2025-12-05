@@ -142,12 +142,8 @@ export default function Home() {
                 About Our Business
               </h2>
               <p className="mt-4 text-lg leading-8 text-black/70 dark:text-white/70">
-                We are a mobile application development company specializing in B2C consumer apps. 
-                Our mission is to bring real value that helps people live better lives through 
-                innovative, high-quality mobile solutions available on iOS and Android platforms.
-              </p>
-              <p className="mt-4 text-base leading-7 text-black/60 dark:text-white/60">
-                <strong className="text-black dark:text-white">Our Core Principle:</strong> Bring Value, Real Value—help people better.
+                We develop B2C mobile applications that bring real value to help people live better. 
+                <strong className="text-black dark:text-white"> Our core principle:</strong> Bring Real Value—help people better.
               </p>
             </div>
           </ScrollAnimation>
@@ -175,10 +171,8 @@ export default function Home() {
                   </dt>
                   <dd className="mt-1 flex flex-auto flex-col text-base leading-7 text-black/70 dark:text-white/70">
                     <p className="flex-auto">
-                      Every app we develop is built with a clear purpose: to deliver genuine value 
-                      that improves users' daily lives. We focus on solving real problems, not just 
-                      creating products. Our apps help users be more productive, learn new skills, 
-                      make better decisions, and enhance their overall well-being.
+                      We build apps that deliver genuine value and solve real problems, helping users 
+                      be more productive, learn new skills, and make better decisions.
                     </p>
                   </dd>
                 </div>
@@ -206,10 +200,8 @@ export default function Home() {
                   <dd className="mt-1 flex flex-auto flex-col text-base leading-7 text-black/70 dark:text-white/70">
                     <p className="flex-auto">
                       We operate as a legitimate software development business, creating and 
-                      publishing mobile applications through official app stores. Our apps are 
-                      professionally developed, regularly maintained, and comply with platform 
-                      guidelines. We handle all aspects of app development, from design and 
-                      engineering to publishing and ongoing support.
+                      publishing mobile applications through official app stores with full 
+                      compliance to platform guidelines.
                     </p>
                   </dd>
                 </div>
@@ -236,11 +228,8 @@ export default function Home() {
                   </dt>
                   <dd className="mt-1 flex flex-auto flex-col text-base leading-7 text-black/70 dark:text-white/70">
                     <p className="flex-auto">
-                      Our commitment to helping people better drives everything we do. We prioritize 
-                      user experience, reliability, and continuous improvement. With over 1.3 million 
-                      downloads and a 4.6-star average rating, we've proven our ability to create 
-                      apps that users trust and value. We maintain transparent business practices 
-                      and are committed to long-term user satisfaction.
+                      We prioritize user experience and reliability. With over 1.3 million downloads 
+                      and a 4.6-star average rating, we create apps that users trust and value.
                     </p>
                   </dd>
                 </div>
