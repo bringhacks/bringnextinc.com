@@ -139,11 +139,12 @@ export default function Home() {
           <ScrollAnimation direction="fade">
             <div className="mx-auto max-w-2xl text-center">
               <h2 className="text-3xl font-bold tracking-tight text-black sm:text-4xl dark:text-white">
-                Our Business
+                Our Principle
               </h2>
               <p className="mt-4 text-lg leading-8 text-black/70 dark:text-white/70">
+                <strong className="text-black dark:text-white">Bring Value. Elevate Users to Next Level.</strong> 
+                <br/>
                 We develop B2C mobile applications that bring real value to help people live better. 
-                <strong className="text-black dark:text-white"> Our core principle:</strong> Bring Real Value—help people better.
               </p>
             </div>
           </ScrollAnimation>
