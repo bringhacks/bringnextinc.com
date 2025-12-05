@@ -20,16 +20,16 @@ export default function Home() {
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-gray-600 dark:text-gray-300 sm:text-xl">
             {siteMetadata.description}
           </p>
-          <div className="mt-10 flex items-center justify-center gap-x-6">
+          <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row sm:gap-x-6">
             <Link
               href="/projects"
-              className="rounded-md bg-primary-600 px-6 py-3 text-base font-semibold text-white shadow-sm hover:bg-primary-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600 dark:bg-primary-500 dark:hover:bg-primary-400"
+              className="w-full rounded-md bg-primary-600 px-6 py-3 text-center text-base font-semibold text-white shadow-sm hover:bg-primary-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600 dark:bg-primary-500 dark:hover:bg-primary-400 sm:w-auto"
             >
               View Our Work
             </Link>
             <Link
               href="/contact"
-              className="text-base font-semibold leading-6 text-gray-900 dark:text-gray-100"
+              className="w-full text-center text-base font-semibold leading-6 text-gray-900 dark:text-gray-100 sm:w-auto"
             >
               Get in Touch <span aria-hidden="true">→</span>
             </Link>
@@ -211,16 +211,16 @@ export default function Home() {
               Let's discuss how we can bring your mobile app idea to life. Get in touch with us
               today.
             </p>
-            <div className="mt-10 flex items-center justify-center gap-x-6">
+            <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row sm:gap-x-6">
               <Link
                 href="/contact"
-                className="rounded-md bg-white px-6 py-3 text-base font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                className="w-full rounded-md bg-white px-6 py-3 text-center text-base font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white sm:w-auto"
               >
                 Contact Us
               </Link>
               <Link
                 href="/about"
-                className="text-base font-semibold leading-6 text-white"
+                className="w-full text-center text-base font-semibold leading-6 text-white sm:w-auto"
               >
                 Learn more <span aria-hidden="true">→</span>
               </Link>

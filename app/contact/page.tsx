@@ -62,7 +62,7 @@ export default function ContactPage() {
           </p>
         </div>
         <div className="container py-12">
-          <div className="grid gap-8 lg:grid-cols-2">
+          <div className="grid gap-8 md:grid-cols-2">
             {/* Contact Information */}
             <div>
               <h2 className="mb-6 text-2xl font-bold text-gray-900 dark:text-gray-100">
