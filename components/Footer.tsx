@@ -4,9 +4,9 @@ import SocialIcon from '@/components/social-icons'
 
 export default function Footer() {
   return (
-    <footer>
+    <footer className="border-t border-black/10 dark:border-white/10 mt-20">
       <div className="mt-16 flex flex-col items-center">
-        <div className="mb-3 flex space-x-4">
+        <div className="mb-6 flex space-x-5">
           <SocialIcon kind="mail" href={`mailto:${siteMetadata.email}`} size={6} />
           {siteMetadata.github && <SocialIcon kind="github" href={siteMetadata.github} size={6} />}
           {siteMetadata.linkedin && (
@@ -14,19 +14,34 @@ export default function Footer() {
           )}
           {siteMetadata.x && <SocialIcon kind="x" href={siteMetadata.x} size={6} />}
         </div>
-        <div className="mb-2 flex space-x-2 text-sm text-gray-500 dark:text-gray-400">
-          <div>{siteMetadata.title}</div>
+        <div className="mb-4 flex flex-wrap items-center justify-center space-x-2 text-sm text-black/60 dark:text-white/60">
+          <div className="font-medium text-black dark:text-white">{siteMetadata.title}</div>
           <div>{` • `}</div>
           <div>{`© ${new Date().getFullYear()}`}</div>
           <div>{` • `}</div>
           <div>All rights reserved</div>
         </div>
-        <div className="mb-8 text-sm text-gray-500 dark:text-gray-400">
-          <Link href="/contact">Contact Us</Link>
-          <span className="mx-2">•</span>
-          <Link href="/about">About</Link>
-          <span className="mx-2">•</span>
-          <Link href="/projects">Projects</Link>
+        <div className="mb-12 flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-sm text-black/60 dark:text-white/60">
+          <Link 
+            href="/contact"
+            className="transition-colors hover:text-black dark:hover:text-white"
+          >
+            Contact Us
+          </Link>
+          <span className="hidden sm:inline">•</span>
+          <Link 
+            href="/about"
+            className="transition-colors hover:text-black dark:hover:text-white"
+          >
+            About
+          </Link>
+          <span className="hidden sm:inline">•</span>
+          <Link 
+            href="/projects"
+            className="transition-colors hover:text-black dark:hover:text-white"
+          >
+            Projects
+          </Link>
         </div>
       </div>
     </footer>

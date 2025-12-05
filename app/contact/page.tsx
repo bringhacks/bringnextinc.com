@@ -51,12 +51,12 @@ export default function ContactPage() {
 
   return (
     <>
-      <div className="divide-y divide-gray-200 dark:divide-gray-700">
+      <div className="divide-y divide-black/10 dark:divide-white/10">
         <div className="space-y-2 pt-6 pb-8 md:space-y-5">
-          <h1 className="text-3xl leading-9 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14 dark:text-gray-100">
+          <h1 className="text-3xl leading-9 font-extrabold tracking-tight text-black sm:text-4xl sm:leading-10 md:text-6xl md:leading-14 dark:text-white">
             Contact Us
           </h1>
-          <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
+          <p className="text-lg leading-7 text-black/60 dark:text-white/60">
             Have questions, feedback, or partnership inquiries? We'd love to hear from you. Get in
             touch with us today.
           </p>
@@ -65,32 +65,32 @@ export default function ContactPage() {
           <div className="grid gap-8 md:grid-cols-2">
             {/* Contact Information */}
             <div>
-              <h2 className="mb-6 text-2xl font-bold text-gray-900 dark:text-gray-100">
+              <h2 className="mb-6 text-2xl font-bold text-black dark:text-white">
                 Get in Touch
               </h2>
               <div className="space-y-4">
                 <div>
-                  <h3 className="mb-2 text-lg font-semibold text-gray-900 dark:text-gray-100">
+                  <h3 className="mb-2 text-lg font-semibold text-black dark:text-white">
                     Email
                   </h3>
                   <Link
                     href={`mailto:${siteMetadata.email}`}
-                    className="text-primary-600 hover:text-primary-500 dark:text-primary-400"
+                    className="text-black/70 hover:text-black dark:text-white/70 dark:hover:text-white transition-colors"
                   >
                     {siteMetadata.email}
                   </Link>
                 </div>
                 <div>
-                  <h3 className="mb-2 text-lg font-semibold text-gray-900 dark:text-gray-100">
+                  <h3 className="mb-2 text-lg font-semibold text-black dark:text-white">
                     Location
                   </h3>
-                  <p className="text-gray-600 dark:text-gray-300">WY, Laramie, US, 82001</p>
+                  <p className="text-black/70 dark:text-white/70">WY, Laramie, US, 82001</p>
                 </div>
                 <div>
-                  <h3 className="mb-2 text-lg font-semibold text-gray-900 dark:text-gray-100">
+                  <h3 className="mb-2 text-lg font-semibold text-black dark:text-white">
                     Business Focus
                   </h3>
-                  <p className="text-gray-600 dark:text-gray-300">B2C Mobile Applications</p>
+                  <p className="text-black/70 dark:text-white/70">B2C Mobile Applications</p>
                 </div>
               </div>
             </div>
@@ -101,7 +101,7 @@ export default function ContactPage() {
                 <div>
                   <label
                     htmlFor="name"
-                    className="block text-sm font-medium text-gray-700 dark:text-gray-300"
+                    className="block text-sm font-medium text-black dark:text-white"
                   >
                     Name <span className="text-red-500">*</span>
                   </label>
@@ -112,14 +112,14 @@ export default function ContactPage() {
                     required
                     value={formData.name}
                     onChange={handleChange}
-                    className="focus:border-primary-500 focus:ring-primary-500 mt-1 block w-full rounded-md border-gray-300 shadow-sm sm:text-sm dark:border-gray-600 dark:bg-gray-800 dark:text-gray-100"
+                    className="focus:border-black focus:ring-black mt-1 block w-full rounded-lg border-black/20 dark:border-white/20 shadow-sm sm:text-sm dark:bg-black/50 dark:text-white focus:ring-2 focus:ring-black/20 dark:focus:ring-white/20 transition-colors"
                   />
                 </div>
 
                 <div>
                   <label
                     htmlFor="email"
-                    className="block text-sm font-medium text-gray-700 dark:text-gray-300"
+                    className="block text-sm font-medium text-black dark:text-white"
                   >
                     Email <span className="text-red-500">*</span>
                   </label>
@@ -130,14 +130,14 @@ export default function ContactPage() {
                     required
                     value={formData.email}
                     onChange={handleChange}
-                    className="focus:border-primary-500 focus:ring-primary-500 mt-1 block w-full rounded-md border-gray-300 shadow-sm sm:text-sm dark:border-gray-600 dark:bg-gray-800 dark:text-gray-100"
+                    className="focus:border-black focus:ring-black mt-1 block w-full rounded-lg border-black/20 dark:border-white/20 shadow-sm sm:text-sm dark:bg-black/50 dark:text-white focus:ring-2 focus:ring-black/20 dark:focus:ring-white/20 transition-colors"
                   />
                 </div>
 
                 <div>
                   <label
                     htmlFor="company"
-                    className="block text-sm font-medium text-gray-700 dark:text-gray-300"
+                    className="block text-sm font-medium text-black dark:text-white"
                   >
                     Company/Organization (Optional)
                   </label>
@@ -147,14 +147,14 @@ export default function ContactPage() {
                     name="company"
                     value={formData.company}
                     onChange={handleChange}
-                    className="focus:border-primary-500 focus:ring-primary-500 mt-1 block w-full rounded-md border-gray-300 shadow-sm sm:text-sm dark:border-gray-600 dark:bg-gray-800 dark:text-gray-100"
+                    className="focus:border-black focus:ring-black mt-1 block w-full rounded-lg border-black/20 dark:border-white/20 shadow-sm sm:text-sm dark:bg-black/50 dark:text-white focus:ring-2 focus:ring-black/20 dark:focus:ring-white/20 transition-colors"
                   />
                 </div>
 
                 <div>
                   <label
                     htmlFor="message"
-                    className="block text-sm font-medium text-gray-700 dark:text-gray-300"
+                    className="block text-sm font-medium text-black dark:text-white"
                   >
                     Message <span className="text-red-500">*</span>
                   </label>
@@ -165,7 +165,7 @@ export default function ContactPage() {
                     rows={6}
                     value={formData.message}
                     onChange={handleChange}
-                    className="focus:border-primary-500 focus:ring-primary-500 mt-1 block w-full rounded-md border-gray-300 shadow-sm sm:text-sm dark:border-gray-600 dark:bg-gray-800 dark:text-gray-100"
+                    className="focus:border-black focus:ring-black mt-1 block w-full rounded-lg border-black/20 dark:border-white/20 shadow-sm sm:text-sm dark:bg-black/50 dark:text-white focus:ring-2 focus:ring-black/20 dark:focus:ring-white/20 transition-colors"
                   />
                 </div>
 
@@ -187,7 +187,7 @@ export default function ContactPage() {
                   <button
                     type="submit"
                     disabled={status === 'loading'}
-                    className="bg-primary-600 hover:bg-primary-500 focus-visible:outline-primary-600 dark:bg-primary-500 dark:hover:bg-primary-400 w-full rounded-md px-6 py-3 text-base font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                    className="bg-black hover:bg-black/90 focus-visible:outline-black dark:bg-white dark:hover:bg-white/90 dark:text-black w-full rounded-lg px-6 py-3 text-base font-semibold text-white shadow-lg transition-all duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black dark:focus-visible:outline-white disabled:cursor-not-allowed disabled:opacity-50"
                   >
                     {status === 'loading' ? 'Sending...' : 'Send Message'}
                   </button>
