@@ -137,14 +137,14 @@ export default function Home() {
         <div className="absolute inset-0 bg-black/5 dark:bg-white/5"></div>
         <div className="mx-auto max-w-7xl px-6 lg:px-8 relative">
           <ScrollAnimation direction="fade">
-            <div className="mx-auto max-w-2xl text-center">
+            <div className="mx-auto max-w-3xl text-center">
               <h2 className="text-3xl font-bold tracking-tight text-black sm:text-4xl dark:text-white">
                 Our Principle
               </h2>
               <p className="mt-4 text-lg leading-8 text-black/70 dark:text-white/70">
                 <strong className="text-black dark:text-white">Bring Value. Elevate Users to Next Level.</strong> 
                 <br/>
-                We develop B2C mobile applications that bring real value to help people live better. 
+                We develop mobile apps that bring real value to users, helping them live better. 
               </p>
             </div>
           </ScrollAnimation>
