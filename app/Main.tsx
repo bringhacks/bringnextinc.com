@@ -139,7 +139,7 @@ export default function Home() {
           <ScrollAnimation direction="fade">
             <div className="mx-auto max-w-2xl text-center">
               <h2 className="text-3xl font-bold tracking-tight text-black sm:text-4xl dark:text-white">
-                About Our Business
+                Our Business
               </h2>
               <p className="mt-4 text-lg leading-8 text-black/70 dark:text-white/70">
                 We develop B2C mobile applications that bring real value to help people live better. 
