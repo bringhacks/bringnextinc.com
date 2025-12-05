@@ -84,7 +84,7 @@ export default function ContactPage() {
                   <h3 className="mb-2 text-lg font-semibold text-gray-900 dark:text-gray-100">
                     Location
                   </h3>
-                  <p className="text-gray-600 dark:text-gray-300">United States</p>
+                  <p className="text-gray-600 dark:text-gray-300">WY, Laramie, US, 82001</p>
                 </div>
                 <div>
                   <h3 className="mb-2 text-lg font-semibold text-gray-900 dark:text-gray-100">
