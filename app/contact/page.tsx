@@ -65,17 +65,24 @@ export default function ContactPage() {
           <div className="grid gap-8 md:grid-cols-2">
             {/* Contact Information */}
             <div>
-              <h2 className="mb-6 text-2xl font-bold text-black dark:text-white">
-                Get in Touch
-              </h2>
+              <h2 className="mb-6 text-2xl font-bold text-black dark:text-white">Get in Touch</h2>
               <div className="space-y-4">
                 <div>
+                  <h3 className="mb-2 text-lg font-semibold text-black dark:text-white">Company</h3>
+                  <p className="text-black/70 dark:text-white/70">BringNext LLC</p>
+                </div>
+                <div>
                   <h3 className="mb-2 text-lg font-semibold text-black dark:text-white">
-                    Email
+                    Representative
                   </h3>
+                  <p className="text-black/70 dark:text-white/70">Hung Do</p>
+                  <p className="text-black/70 dark:text-white/70">0978 236 434</p>
+                </div>
+                <div>
+                  <h3 className="mb-2 text-lg font-semibold text-black dark:text-white">Email</h3>
                   <Link
                     href={`mailto:${siteMetadata.email}`}
-                    className="text-black/70 hover:text-black dark:text-white/70 dark:hover:text-white transition-colors"
+                    className="text-black/70 transition-colors hover:text-black dark:text-white/70 dark:hover:text-white"
                   >
                     {siteMetadata.email}
                   </Link>
@@ -84,7 +91,9 @@ export default function ContactPage() {
                   <h3 className="mb-2 text-lg font-semibold text-black dark:text-white">
                     Location
                   </h3>
-                  <p className="text-black/70 dark:text-white/70">WY, Laramie, US, 82001</p>
+                  <p className="text-black/70 dark:text-white/70">
+                    9340, 1021 E Lincolnway, Cheyenne, WY, Laramie, US, 82001
+                  </p>
                 </div>
                 <div>
                   <h3 className="mb-2 text-lg font-semibold text-black dark:text-white">
@@ -112,7 +121,7 @@ export default function ContactPage() {
                     required
                     value={formData.name}
                     onChange={handleChange}
-                    className="focus:border-black focus:ring-black mt-1 block w-full rounded-lg border-black/20 dark:border-white/20 shadow-sm sm:text-sm dark:bg-black/50 dark:text-white focus:ring-2 focus:ring-black/20 dark:focus:ring-white/20 transition-colors"
+                    className="mt-1 block w-full rounded-lg border-black/20 shadow-sm transition-colors focus:border-black focus:ring-2 focus:ring-black focus:ring-black/20 sm:text-sm dark:border-white/20 dark:bg-black/50 dark:text-white dark:focus:ring-white/20"
                   />
                 </div>
 
@@ -130,7 +139,7 @@ export default function ContactPage() {
                     required
                     value={formData.email}
                     onChange={handleChange}
-                    className="focus:border-black focus:ring-black mt-1 block w-full rounded-lg border-black/20 dark:border-white/20 shadow-sm sm:text-sm dark:bg-black/50 dark:text-white focus:ring-2 focus:ring-black/20 dark:focus:ring-white/20 transition-colors"
+                    className="mt-1 block w-full rounded-lg border-black/20 shadow-sm transition-colors focus:border-black focus:ring-2 focus:ring-black focus:ring-black/20 sm:text-sm dark:border-white/20 dark:bg-black/50 dark:text-white dark:focus:ring-white/20"
                   />
                 </div>
 
@@ -147,7 +156,7 @@ export default function ContactPage() {
                     name="company"
                     value={formData.company}
                     onChange={handleChange}
-                    className="focus:border-black focus:ring-black mt-1 block w-full rounded-lg border-black/20 dark:border-white/20 shadow-sm sm:text-sm dark:bg-black/50 dark:text-white focus:ring-2 focus:ring-black/20 dark:focus:ring-white/20 transition-colors"
+                    className="mt-1 block w-full rounded-lg border-black/20 shadow-sm transition-colors focus:border-black focus:ring-2 focus:ring-black focus:ring-black/20 sm:text-sm dark:border-white/20 dark:bg-black/50 dark:text-white dark:focus:ring-white/20"
                   />
                 </div>
 
@@ -165,7 +174,7 @@ export default function ContactPage() {
                     rows={6}
                     value={formData.message}
                     onChange={handleChange}
-                    className="focus:border-black focus:ring-black mt-1 block w-full rounded-lg border-black/20 dark:border-white/20 shadow-sm sm:text-sm dark:bg-black/50 dark:text-white focus:ring-2 focus:ring-black/20 dark:focus:ring-white/20 transition-colors"
+                    className="mt-1 block w-full rounded-lg border-black/20 shadow-sm transition-colors focus:border-black focus:ring-2 focus:ring-black focus:ring-black/20 sm:text-sm dark:border-white/20 dark:bg-black/50 dark:text-white dark:focus:ring-white/20"
                   />
                 </div>
 
@@ -187,7 +196,7 @@ export default function ContactPage() {
                   <button
                     type="submit"
                     disabled={status === 'loading'}
-                    className="bg-black hover:bg-black/90 focus-visible:outline-black dark:bg-white dark:hover:bg-white/90 dark:text-black w-full rounded-lg px-6 py-3 text-base font-semibold text-white shadow-lg transition-all duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black dark:focus-visible:outline-white disabled:cursor-not-allowed disabled:opacity-50"
+                    className="w-full rounded-lg bg-black px-6 py-3 text-base font-semibold text-white shadow-lg transition-all duration-200 hover:bg-black/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black disabled:cursor-not-allowed disabled:opacity-50 dark:bg-white dark:text-black dark:hover:bg-white/90 dark:focus-visible:outline-white"
                   >
                     {status === 'loading' ? 'Sending...' : 'Send Message'}
                   </button>
