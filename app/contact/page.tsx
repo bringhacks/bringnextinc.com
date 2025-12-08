@@ -76,6 +76,9 @@ export default function ContactPage() {
                     Representative
                   </h3>
                   <p className="text-black/70 dark:text-white/70">Hung Do</p>
+                </div>
+                <div>
+                  <h3 className="mb-2 text-lg font-semibold text-black dark:text-white">Phone</h3>
                   <p className="text-black/70 dark:text-white/70">0978 236 434</p>
                 </div>
                 <div>
