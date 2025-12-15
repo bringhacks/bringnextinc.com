@@ -35,20 +35,11 @@ export default function ContactPage() {
                   <h3 className="mb-2 text-lg font-semibold text-black dark:text-white">
                     Representative
                   </h3>
-                  <p className="text-black/70 dark:text-white/70">Hung Do</p>
-                </div>
-                <div>
-                  <h3 className="mb-2 text-lg font-semibold text-black dark:text-white">Phone</h3>
-                  <p className="text-black/70 dark:text-white/70">0978 236 434</p>
+                  <p className="text-black/70 dark:text-white/70">Andy Do</p>
                 </div>
                 <div>
                   <h3 className="mb-2 text-lg font-semibold text-black dark:text-white">Email</h3>
-                  <Link
-                    href={`mailto:${siteMetadata.email}`}
-                    className="text-black/70 transition-colors hover:text-black dark:text-white/70 dark:hover:text-white"
-                  >
-                    {siteMetadata.email}
-                  </Link>
+                  <p className="text-black/70 dark:text-white/70">{siteMetadata.email}</p>
                 </div>
                 <div>
                   <h3 className="mb-2 text-lg font-semibold text-black dark:text-white">
