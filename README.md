@@ -1,58 +1,30 @@
-# Tailwind Nextjs Starter Blog
+# Bring Next LLC – Static HTML site
 
-## Installation
+Site HTML tĩnh: trang chủ, giới thiệu, danh sách app, liên hệ. Không dùng framework, chỉ HTML/CSS.
 
-```bash
-yarn
-```
+## Trang
 
-Please note, that if you are using Windows, you may need to run:
+- **index.html** – Trang chủ  
+- **about.html** – Giới thiệu  
+- **projects.html** – Danh sách app  
+- **contact.html** – Liên hệ (form gửi qua Formspree)  
+- **app-ads.txt** – Google AdSense
 
-```bash
-$env:PWD = $(Get-Location).Path
-```
-
-## Development
-
-First, run the development server:
+## Chạy local
 
 ```bash
-yarn dev
+python3 -m http.server 8080
+# Mở http://localhost:8080
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Hoặc: `npx serve .`
 
-Edit the layout in `app` or content in `data`. With live reloading, the pages auto-updates as you edit them.
+## Deploy
 
-## Extend / Customize
+Upload toàn bộ thư mục gốc lên static host (Coolify static site, Nginx, Cloudflare Pages, …). Document root trỏ vào thư mục này. Đảm bảo `/app-ads.txt` trả file `app-ads.txt` với `Content-Type: text/plain`.
 
-`data/siteMetadata.js` - contains most of the site related information which should be modified for a user's need.
+## Cấu trúc
 
-`data/authors/default.md` - default author information (required). Additional authors can be added as files in `data/authors`.
-
-`data/projectsData.js` - data used to generate styled card on the projects page.
-
-`data/headerNavLinks.js` - navigation links.
-
-`data/logo.svg` - replace with your own logo.
-
-`data/blog` - replace with your own blog posts.
-
-`public/static` - store assets such as images and favicons.
-
-`tailwind.config.js` and `css/tailwind.css` - tailwind configuration and stylesheet which can be modified to change the overall look and feel of the site.
-
-`css/prism.css` - controls the styles associated with the code blocks. Feel free to customize it and use your preferred prismjs theme e.g. [prism themes](https://github.com/PrismJS/prism-themes).
-
-`contentlayer.config.ts` - configuration for Contentlayer, including definition of content sources and MDX plugins used. See [Contentlayer documentation](https://www.contentlayer.dev/docs/getting-started) for more information.
-
-`components/MDXComponents.js` - pass your own JSX code or React component by specifying it over here. You can then use them directly in the `.mdx` or `.md` file. By default, a custom link, `next/image` component, table of contents component and Newsletter form are passed down. Note that the components should be default exported to avoid [existing issues with Next.js](https://github.com/vercel/next.js/issues/51593).
-
-`layouts` - main templates used in pages:
-
-- There are currently 3 post layouts available: `PostLayout`, `PostSimple` and `PostBanner`. `PostLayout` is the default 2 column layout with meta and author information. `PostSimple` is a simplified version of `PostLayout`, while `PostBanner` features a banner image.
-- There are 2 blog listing layouts: `ListLayout`, the layout used in version 1 of the template with a search bar and `ListLayoutWithTags`, currently used in version 2, which omits the search bar but includes a sidebar with information on the tags.
-
-`app` - pages to route to. Read the [Next.js documentation](https://nextjs.org/docs/app) for more information.
-
-`next.config.js` - configuration related to Next.js. You need to adapt the Content Security Policy if you want to load scripts, images etc. from other domains.
+- `index.html`, `about.html`, `projects.html`, `contact.html` – các trang  
+- `css/site.css` – style chung  
+- `static/` – favicons, ảnh, logo app  
