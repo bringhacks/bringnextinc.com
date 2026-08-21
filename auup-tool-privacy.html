@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy Policy | Auup</title>
+  <meta name="description" content="Privacy Policy for the Auup Redbubble Automation Tool & Language Translator Chrome extension by Bring Next LLC." />
+  <link rel="icon" type="image/png" sizes="32x32" href="static/favicons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="static/favicons/favicon-16x16.png" />
+  <link rel="stylesheet" href="css/site.css" />
+</head>
+<body>
+  <section class="section">
+    <header class="header">
+      <a href="index.html" aria-label="Bring Next" class="logo-wrap">
+        <img src="static/images/logo.png" alt="Bring Next" width="40" height="40" />
+        <span class="header-title">Bring Next</span>
+      </a>
+      <nav class="nav">
+        <a href="projects.html" class="desktop">Projects</a>
+        <a href="about.html" class="desktop">About</a>
+        <a href="contact.html" class="desktop">Contact</a>
+      </nav>
+    </header>
+  </section>
+
+  <main>
+    <div class="section page-header">
+      <h1>Privacy Policy — Auup</h1>
+      <p>Last updated: August 21, 2026</p>
+    </div>
+    <div class="section prose" style="padding-bottom: 2rem;">
+      <p>Auup (the "Extension") is a Chrome extension built and operated by Bring Next LLC ("we", "us", "our") that helps Redbubble sellers automate uploads, tags, and descriptions, and also includes language translation and vocabulary-learning features. This page explains what data the Extension collects, how it's used, and the choices you have. It applies specifically to Auup — for our mobile apps, see our <a href="privacy.html">general Privacy Policy</a>.</p>
+      <p>By installing or using Auup, you agree to the collection and use of information as described in this policy.</p>
+
+      <h2>Information We Collect</h2>
+      <p><strong>Redbubble account info & session cookies.</strong> When you add a Redbubble store to Auup by logging in through the extension (directly, via a proxy, or via a GoLogin browser profile), Auup reads your Redbubble session cookies using Chrome's cookies API and sends your account email, display name, avatar, provider account ID, and session cookies to our backend server. This lets Auup keep your store connected and perform automated uploads on your behalf.</p>
+      <p><strong>Design files and product data.</strong> Images and videos you select for upload, along with the tags, descriptions, and product settings (colors, categories) you configure, are sent to our backend server and to Redbubble in order to complete the upload and alignment process. Data you import or export via CSV/Excel files is processed to read and write this product data.</p>
+      <p><strong>Upload schedule and history.</strong> Your configured daily upload limits, break times, and the history of uploaded files and timestamps are stored on our servers so the Extension can run automation on your schedule and show it in your dashboard.</p>
+      <p><strong>Proxy / GoLogin configuration.</strong> If you choose to connect a Redbubble store through a custom proxy or a GoLogin browser profile, that configuration (e.g. proxy address, GoLogin profile ID) is stored so Auup can reconnect to the correct profile for future automation runs.</p>
+      <p><strong>Text you translate.</strong> When you select text to translate (on a webpage or in a PDF), that text is sent to Google Translate to fetch the translation, pronunciation, and audio. We do not log or store this text on our servers — it passes through to Google's translation service and back to your browser.</p>
+      <p><strong>Saved words and translation history.</strong> Your favorites and translation/vocabulary history are stored locally in your browser (via Chrome's storage API) and are not sent to our servers.</p>
+      <p><strong>Account email and password.</strong> Creating an Auup account requires an email address and password, handled by Firebase Authentication. Your name, email, and account ID are also stored in our Firestore database to manage your profile and plan.</p>
+      <p><strong>Payment and subscription status, if you upgrade to Premium.</strong> Payments and billing are handled entirely by Stripe — we never see or store your card number or other full payment details. Stripe shares your subscription and plan status with us so we can activate Premium features and enforce upload limits. See <a href="https://stripe.com/privacy" target="_blank" rel="noopener noreferrer">Stripe's Privacy Policy</a>.</p>
+
+      <h2>How We Use Information</h2>
+      <ul>
+        <li>To connect and manage your Redbubble store(s) and perform automated uploads, tag/description generation, and image alignment.</li>
+        <li>To run uploads on your configured schedule and show upload history and stats in your dashboard.</li>
+        <li>To provide the translation, dictionary, and vocabulary-learning features of the Extension.</li>
+        <li>To identify your account and manage your plan and Premium status.</li>
+        <li>To activate and manage your Premium subscription after purchase.</li>
+      </ul>
+      <p>We do not use your data for advertising, and we do not sell your personal information to third parties.</p>
+
+      <h2>Third-Party Services</h2>
+      <p>Auup relies on the following third-party services, each governed by its own privacy policy:</p>
+      <ul>
+        <li><a href="https://www.redbubble.com/legal/privacy-policy" target="_blank" rel="noopener noreferrer">Redbubble</a> — the platform Auup automates uploads to on your behalf, using your Redbubble session.</li>
+        <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Translate</a> — to translate selected text and provide pronunciation audio.</li>
+        <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Firebase / Google Cloud</a> — to authenticate your account and store your profile, plan, and account data (Firestore, Storage).</li>
+        <li><a href="https://stripe.com/privacy" target="_blank" rel="noopener noreferrer">Stripe</a> — to process Premium payments and manage billing.</li>
+        <li><a href="https://gologin.com/privacy-policy" target="_blank" rel="noopener noreferrer">GoLogin</a> — only if you choose to connect a Redbubble store using a GoLogin browser profile.</li>
+      </ul>
+
+      <h2>Data Storage & Security</h2>
+      <p>Your Redbubble account info, session cookies, uploaded design data, and schedule/history are stored on our backend server and Google Cloud infrastructure (Firestore), and are used only to operate the automation features you configure. Your saved words and translation history stay local to your browser and are not accessible to us. We use commercially reasonable measures to protect this data, but no method of transmission or storage is 100% secure.</p>
+
+      <h2>Permissions the Extension Requests</h2>
+      <ul>
+        <li><strong>storage</strong> — to save your settings, favorites, and history locally.</li>
+        <li><strong>cookies</strong> — to read your Redbubble session cookies so Auup can connect your store and perform automation.</li>
+        <li><strong>tabs / activeTab</strong> — to open and manage the browser tabs used during login and the upload/automation flow.</li>
+        <li><strong>scripting</strong> — to inject the scripts that auto-fill, upload, and align your designs on Redbubble pages.</li>
+        <li><strong>Access to web pages (host permissions)</strong> — to let you select text on any page to translate, and to run automation on redbubble.com and fetch translations from translate.google.com.</li>
+      </ul>
+
+      <h2>Data Deletion</h2>
+      <p>You can remove a connected Redbubble store, or clear your local history and favorites, at any time from within the Extension. Uninstalling the Extension removes all local data. To request deletion of your account, store data, or history from our servers, email <a href="mailto:contact@bringnextinc.com">contact@bringnextinc.com</a>.</p>
+
+      <h2>Children's Privacy</h2>
+      <p>Auup does not knowingly collect personal information from children under 13. If we learn that a child under 13 has provided us with personal information, we will delete it promptly. If you believe a child has provided us with personal information, please contact us.</p>
+
+      <h2>Changes to This Privacy Policy</h2>
+      <p>We may update this Privacy Policy from time to time. Changes will be posted on this page with an updated "Last updated" date.</p>
+
+      <h2>Contact Us</h2>
+      <p>If you have questions about this Privacy Policy, contact us at <a href="mailto:contact@bringnextinc.com">contact@bringnextinc.com</a>.</p>
+      <p>
+        <strong>Company:</strong> BringNext LLC<br />
+        <strong>Representative:</strong> Hung Do<br />
+        <strong>Location:</strong> 9340, 1021 E Lincolnway, Cheyenne, WY, Laramie, US, 82001
+      </p>
+    </div>
+  </main>
+
+  <footer class="footer section">
+    <div class="footer-links">
+      <a href="mailto:contact@bringnextinc.com">mail</a>
+      <a href="https://github.com/bringhacks" target="_blank" rel="noopener noreferrer">GitHub</a>
+    </div>
+    <div class="footer-meta">Bring Next LLC • © 2026 • All rights reserved</div>
+    <div class="footer-meta">
+      <a href="contact.html">Contact Us</a> • <a href="about.html">About</a> • <a href="projects.html">Projects</a> • <a href="privacy.html">Privacy</a> • <a href="terms.html">Terms</a>
+    </div>
+  </footer>
+</body>
+</html>
