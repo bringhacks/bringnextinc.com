@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pearlwave 隐私政策 | Pearlwave | BringNext LLC</title>
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://bringnextinc.com/pearlwave/privacy/zh-Hans/">
+<style>:root{--bg:#fff;--text:#111;--muted:rgba(0,0,0,.7);--border:rgba(0,0,0,.1);--accent:#111;--soft:rgba(0,0,0,.04)}
+@media (prefers-color-scheme:dark){:root{--bg:#000;--text:#eee;--muted:rgba(255,255,255,.7);--border:rgba(255,255,255,.1);--accent:#fff;--soft:rgba(255,255,255,.06)}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:1rem;-webkit-text-size-adjust:100%}
+body{font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;margin:0;padding:0}
+.section{max-width:72rem;margin:0 auto;padding:0 1rem}
+@media (min-width:640px){.section{padding:0 1.5rem}}
+@media (min-width:1280px){.section{padding:0}}
+.header{display:flex;align-items:center;justify-content:space-between;padding:2rem 0;border-bottom:1px solid var(--border);flex-wrap:wrap;gap:1rem}
+.header a{color:inherit;text-decoration:none}
+.header a:hover{opacity:.85}
+.logo-wrap{display:flex;align-items:center;gap:.75rem}
+.mark{width:40px;height:40px;border-radius:10px;background:var(--accent);color:var(--bg);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:1.05rem;letter-spacing:-.02em}
+.header-title{font-size:1.5rem;font-weight:600}
+.nav{display:flex;align-items:center;gap:1.5rem}
+.nav a{font-weight:500;color:var(--muted)}
+.nav a:hover{color:var(--text)}
+@media (max-width:640px){.nav .desktop{display:none}}
+.subnav{display:flex;flex-wrap:wrap;gap:.25rem 1.25rem;padding:.75rem 0;border-bottom:1px solid var(--border);font-size:.9375rem}
+.subnav a{color:var(--muted);text-decoration:none;padding:.25rem 0}
+.subnav a:hover{color:var(--text)}
+.subnav a[aria-current="page"]{color:var(--text);font-weight:600;border-bottom:2px solid var(--accent)}
+main{min-height:60vh;padding-bottom:3rem}
+.page-header{padding-top:2rem;padding-bottom:1rem}
+.page-header h1{font-size:clamp(1.875rem,4vw,3rem);font-weight:800;margin:0 0 .5rem;line-height:1.15}
+.page-header p{font-size:1.125rem;color:var(--muted);margin:0}
+.prose{max-width:50rem;padding-bottom:2rem;min-width:0;overflow-wrap:break-word}
+.prose h2{font-size:1.375rem;margin:2.25rem 0 .5rem;line-height:1.3}
+.prose h3{font-size:1.125rem;margin:1.5rem 0 .4rem;line-height:1.35}
+.prose p,.prose li{color:var(--muted)}
+.prose strong{color:var(--text)}
+.prose p{margin:0 0 1rem}
+.prose ul,.prose ol{margin:0 0 1rem;padding-left:1.5rem}
+.prose li{margin:.25rem 0}
+.prose a{color:var(--text);text-decoration:underline;text-underline-offset:2px;overflow-wrap:anywhere}
+.prose a:focus-visible,.nav a:focus-visible,.subnav a:focus-visible,.btn:focus-visible,summary:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:2px}
+.prose hr{border:0;border-top:1px solid var(--border);margin:1.5rem 0}
+.prose blockquote{margin:1rem 0 1.25rem;padding:.75rem 1rem;border-left:3px solid var(--accent);background:var(--soft);border-radius:0 .5rem .5rem 0}
+.prose blockquote p{margin:.25rem 0;color:var(--text)}
+.prose code{font:.9em ui-monospace,SFMono-Regular,Consolas,monospace;background:var(--soft);padding:1px 5px;border-radius:4px;overflow-wrap:anywhere}
+.prose table{display:block;overflow-x:auto;border-collapse:collapse;margin:1rem 0 1.5rem;font-size:.9375rem;max-width:100%}
+.prose th,.prose td{border:1px solid var(--border);padding:.5rem .75rem;text-align:left;vertical-align:top;min-width:8rem}
+.prose th{background:var(--soft);color:var(--text)}
+.prose td{color:var(--muted)}
+.prose td strong{color:var(--text)}
+.toc{border:1px solid var(--border);border-radius:.5rem;margin:1rem 0 0;max-width:50rem}
+.toc summary{cursor:pointer;padding:.75rem 1rem;font-weight:600}
+.toc ol{margin:0;padding:0 1rem 1rem 2.5rem;columns:1}
+@media (min-width:700px){.toc ol{columns:2;column-gap:2rem}}
+.toc li{margin:.2rem 0;break-inside:avoid}
+.toc a{color:var(--muted);text-decoration:none}
+.toc a:hover{color:var(--text);text-decoration:underline}
+.btn{display:inline-block;padding:.75rem 1.5rem;font-weight:600;border-radius:.5rem;text-decoration:none!important;background:var(--accent);color:var(--bg)!important}
+.btn:hover{opacity:.9}
+.footer{border-top:1px solid var(--border);margin-top:3rem;padding-top:2rem;padding-bottom:2rem;text-align:center}
+.footer-links{display:flex;justify-content:center;gap:1rem;margin-bottom:1rem}
+.footer-links a{color:var(--muted);text-decoration:none}
+.footer-links a:hover{color:var(--text)}
+.footer-meta{font-size:.875rem;color:var(--muted)}
+.footer-meta a{color:inherit}
+@media print{.header,.subnav,.toc,.footer-links{display:none}}
+.lang{display:flex;flex-wrap:wrap;gap:.5rem;margin:0;padding:1rem 0 0;list-style:none}
+.lang a{display:inline-block;padding:.25rem .75rem;border:1px solid var(--border);border-radius:999px;color:var(--muted);text-decoration:none;font-size:.9375rem}
+.lang a:hover{color:var(--text)}
+.lang a[aria-current="page"]{background:var(--accent);border-color:var(--accent);color:var(--bg);font-weight:600}
+.lang a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.card{border:1px solid var(--border);border-radius:.5rem;padding:1rem 1.25rem;margin:1rem 0;background:var(--soft)}
+.card p{margin:.25rem 0}</style>
+</head>
+<body>
+<section class="section">
+  <header class="header">
+    <a href="../../../" aria-label="Bring Next" class="logo-wrap"><span class="mark" aria-hidden="true">BN</span><span class="header-title">Bring Next</span></a>
+    <nav class="nav" aria-label="Bring Next">
+      <a href="../../../projects.html" class="desktop">Projects</a>
+      <a href="../../../about.html" class="desktop">About</a>
+      <a href="../../../contact.html">Contact</a>
+    </nav>
+  </header>
+  <nav class="subnav" aria-label="Pearlwave">
+    <a href="../../">Pearlwave</a>
+    <a href="../../privacy/" aria-current="page">Privacy Policy</a>
+    <a href="../../support/">Support</a>
+  </nav>
+</section>
+
+<main>
+  <div class="section page-header">
+    <h1>Pearlwave 隐私政策</h1>
+    <nav aria-label="Language"><ul class="lang"><li><a href="../" hreflang="en" lang="en">English</a></li><li><a href="../de/" hreflang="de" lang="de">Deutsch</a></li><li><a href="../es/" hreflang="es" lang="es">Español</a></li><li><a href="../fr/" hreflang="fr" lang="fr">Français</a></li><li><a href="../it/" hreflang="it" lang="it">Italiano</a></li><li><a href="../ja/" hreflang="ja" lang="ja">日本語</a></li><li><a href="../ko/" hreflang="ko" lang="ko">한국어</a></li><li><a href="../pt-BR/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a></li><li><a href="../ru/" hreflang="ru" lang="ru">Русский</a></li><li><a href="../tr/" hreflang="tr" lang="tr">Türkçe</a></li><li><a href="../zh-Hans/" hreflang="zh-Hans" lang="zh-Hans" aria-current="page">简体中文</a></li></ul></nav>
+  </div>
+  <div class="section">
+    <details class="toc"><summary>目录</summary><ol><li><a href="#privacy-1">我们是谁</a></li><li><a href="#privacy-2">简要说明</a></li><li><a href="#privacy-3">保存在您设备上的数据</a></li><li><a href="#privacy-4">本游戏面向哪些人</a></li><li><a href="#privacy-5">离开您设备的信息</a></li><li><a href="#privacy-6">我们不会做的事</a></li><li><a href="#privacy-7">您的选择和权利</a></li><li><a href="#privacy-8">法律依据（欧洲经济区、英国、瑞士）</a></li><li><a href="#privacy-9">国际传输</a></li><li><a href="#privacy-10">数据保存多长时间</a></li><li><a href="#privacy-11">安全</a></li><li><a href="#privacy-12">变更</a></li><li><a href="#privacy-13">联系我们</a></li></ol></details>
+  </div>
+  <div class="section">
+    <div class="prose">
+<p><strong>生效日期：</strong> 2026年11月15日</p>
+
+<h2 id="privacy-1">1. 我们是谁</h2>
+<p>Pearlwave（简称“本游戏”）是一款适用于 Android 和 iOS 的益智游戏，由 BringNext LLC（注册地址：1021 E Lincolnway #9340, Cheyenne, WY 82001, United States）发行（以下简称“我们”）。我们是本政策所述个人信息的处理者。</p>
+<p>就本政策中的任何事项，请联系：<a href="mailto:contact@bringnextinc.com">contact@bringnextinc.com</a>。</p>
+<h2 id="privacy-2">2. 简要说明</h2>
+<ol>
+<li>本游戏没有账号，无需登录，我们也没有自己的服务器。您的游戏进度、设置和购买记录仅保存在您的设备上。</li>
+<li>本游戏面向 13 岁及以上的人群，并非面向儿童，也不会询问您的年龄（见第 4 节）。</li>
+<li>本游戏展示由 Google AdMob 投放的广告：由您自行决定是否观看的激励视频广告，以及在部分关卡之间出现的简短全屏广告（见第 5.2 节）。投放这些广告的广告公司会从您的设备收到一些技术数据（见第 5 节）。在法律要求取得您许可的地方，仅在您允许时才会展示个性化广告；如果您拒绝，您仍会看到广告，但不是个性化的。</li>
+<li>在法律允许的情况下，并且在法律要求取得您同意的地方（例如欧洲经济区、英国和瑞士）仅在您接受后，本游戏才会使用 Google Firebase 发送使用数据和崩溃数据，并接收用于关卡难度的少量远程设置（见第 5.3 节）。这些数据不会指明您的身份，我们也不会将其用于广告。</li>
+<li>我们不出售您的数据。我们不投放横幅广告。我们不出售随机道具。本游戏设有一个免费的奖励宝箱，其内容在您已解锁的物品中随机产生，开启前会显示各项概率，且无法用金钱或游戏内货币购买。</li>
+<li>在欧洲经济区、英国和瑞士，本游戏会在广告、使用数据、崩溃报告或远程设置启动之前征求您的同意；在 iOS 上，还会请求一次跟踪权限。您之后可以更改这些选择（见第 5.4 节、第 5.5 节和第 7 节）。</li>
+</ol>
+<h2 id="privacy-3">3. 保存在您设备上的数据</h2>
+<p>以下数据由本游戏创建并保存在您的设备上，我们不会收到。</p>
+<table>
+<thead>
+<tr>
+<th>Data</th>
+<th>What it is used for</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>游戏进度：关卡、星级、物品、游戏内货币（“贝壳”）、收藏、统计数据、每日挑战和日历状态</td>
+<td>让您可以从上次停下的地方继续游戏</td>
+</tr>
+<tr>
+<td>设置：音效、音乐、振动、语言、文字大小、减少动态效果、珍珠符号、提示</td>
+<td>记住您的选择</td>
+</tr>
+<tr>
+<td>购买记录：您拥有哪些商品，以及用于确保奖励不会重复发放的日志</td>
+<td>向您提供所购内容并支持恢复购买</td>
+</tr>
+<tr>
+<td>您的同意选择，以及本游戏是否已经请求过跟踪权限</td>
+<td>避免重复询问，并尊重您的选择</td>
+</tr>
+<tr>
+<td>定时提醒通知（仅在您允许时）</td>
+<td>提醒您，例如体力已满。这些通知由您的设备生成，而非由服务器发送</td>
+</tr>
+</tbody>
+</table>
+<p>您可以随时清除以上全部数据：设置，隐私，“删除本地数据”。卸载本游戏也会将其清除。删除本地数据还会通知 Firebase 重置您设备上的分析标识符，删除尚未发送的崩溃报告，并请求 Firebase 删除安装标识符和已保存的远程设置（见第 5.3 节）。它不会删除广告或数据分析服务提供商已经从您的设备收到的数据。如何申请删除，见第 7 节。</p>
+<p>如果您的设备会备份应用数据（例如 Android 自动备份或 iCloud），您的存档文件可能会被操作系统纳入该备份。我们无法控制或查看这些备份。</p>
+<h2 id="privacy-4">4. 本游戏面向哪些人</h2>
+<p>本游戏面向 13 岁及以上的人群，并非面向 13 岁以下的儿童。本游戏不会询问您的年龄，因此不会按年龄改变广告、购买或数据收集方式：每位玩家获得的功能都相同。</p>
+<p>目前，本游戏不会在我们的任何服务器上收集个人信息。离开您设备的数据，只会发送到第 5 节所述的广告和数据分析服务。我们不会在知情的情况下收集未满 13 岁儿童的个人信息。如果您是家长或监护人，得知有未满 13 岁的儿童通过本游戏发送了数据，请写信至 <a href="mailto:contact@bringnextinc.com">contact@bringnextinc.com</a>。我们会删除我们所持有的数据，并请第 5 节中列明的服务提供商删除其余数据。</p>
+<p>家长可以通过 Google Family Link 或 Apple 屏幕使用时间的控制功能来限制孩子设备上的购买和广告。</p>
+<h2 id="privacy-5">5. 离开您设备的信息</h2>
+<p>玩本游戏不需要网络连接。仅在下列情形下，信息才会离开您的设备。</p>
+<h3>5.1 购买</h3>
+<p>购买由 Google Play 或 Apple App Store 处理，而非由我们处理。我们不会看到您的银行卡或付款信息。应用商店会告知本游戏您购买了哪项商品，本游戏在您的设备上核对收据。我们没有存储购买记录的服务器。请阅读您所用应用商店的隐私政策：Google Play <a href="https://policies.google.com/privacy" rel="noopener">https://policies.google.com/privacy</a>，Apple <a href="https://www.apple.com/legal/privacy/" rel="noopener">https://www.apple.com/legal/privacy/</a>。</p>
+<h3>5.2 广告</h3>
+<p>本游戏使用 Google AdMob 展示两类广告。激励视频广告只有在您点击标明奖励内容的按钮时才会展示。插页广告是关卡之间出现的简短全屏广告，不由您选择。截至本文撰写时，它们从第 16 关起且从您的第二次会话起开始出现，每赢三局出现一次，距上一次全屏广告至少 3 分钟、每天最多 6 次，并且在失败之后或刚看完激励广告之后绝不出现。如果您购买了免广告商品，或在任何一次购买后的 7 天内，也不会展示。每条广告之前会有一个简短的“马上回来”画面，之后会有一个感谢画面，二者都是本游戏的一部分。本游戏没有横幅广告，启动时也没有广告。</p>
+<p>请求广告时，Google 可能会从您的设备接收并使用一些数据，例如您的 IP 地址、设备和应用标识符（在允许的情况下包括 Android 广告 ID 或 iOS 广告标识符）、设备型号和操作系统、应用版本、语言，以及您与广告互动的信息（展示次数、点击、视频观看）。Google 使用这些数据来选择和展示广告、衡量广告效果、限制您看到同一广告的频率、防范欺诈并履行其法律义务。在 Android 上，本游戏声明了广告 ID 权限（AD_ID），因此即使广告不进行个性化，Google 也会随广告请求收到广告 ID，用于衡量、频次限制和防欺诈。我们要求 Google 将广告限制在 PG 或更低的内容分级，并且不会将本游戏或其广告请求标记为面向儿童。对于这些数据，Google 作为独立的个人信息处理者行事。请参阅 <a href="https://policies.google.com/technologies/ads" rel="noopener">https://policies.google.com/technologies/ads</a> 和 <a href="https://policies.google.com/privacy" rel="noopener">https://policies.google.com/privacy</a> 。</p>
+<p>个性化广告使用您的广告标识符。这类广告仅在法律允许的情况下展示，并且在法律要求取得您许可的地方（第 5.4 节中的同意提示和第 5.5 节中的 iOS 跟踪权限），仅在您给予许可后才会展示。未经许可时，您仍会看到广告，但不进行个性化，Google 仍可能将上述标识符用于衡量、频次限制和防欺诈。</p>
+<h3>5.3 使用数据、崩溃数据和远程设置（Google Firebase）</h3>
+<p>本游戏使用 Firebase（Google 的产品）的三项服务：Firebase Analytics（Google Analytics for Firebase）、Firebase Crashlytics 和 Firebase Remote Config。这些服务由 Google LLC（1600 Amphitheatre Parkway, Mountain View, California, USA）提供，对于欧洲经济区、英国和瑞士的用户，则由 Google Ireland Limited 提供。Google 依据 Firebase 数据处理和安全条款（Firebase Data Processing and Security Terms）作为我们的服务提供者（受托处理者）代我们处理这些数据，<a href="https://firebase.google.com/terms/data-processing-terms" rel="noopener">https://firebase.google.com/terms/data-processing-terms</a>。另见 <a href="https://firebase.google.com/support/privacy" rel="noopener">https://firebase.google.com/support/privacy</a> 和 <a href="https://policies.google.com/privacy" rel="noopener">https://policies.google.com/privacy</a> 。</p>
+<p>在本游戏的同意步骤运行之前，这三项服务保持关闭。在法律要求取得您同意的地方（例如欧洲经济区、英国和瑞士），您接受之前不会发送任何内容；如果您拒绝或尚未回答，也不会发送任何内容。在不要求同意的地方，它们会不经询问直接启动。在设置，隐私中，开关“共享使用数据”让每一位玩家（而不仅是看到同意提示的玩家）都可以随时关闭它们；关闭的做法与撤回同意相同（设备上的分析数据会被重置，尚未发送的崩溃报告和 Firebase 安装标识符会被删除）。</p>
+<ol>
+<li><strong>Firebase Analytics。</strong> 本游戏会发送描述其玩法使用情况的事件：首次启动和最初几分钟的步骤，关卡的开始和结束（关卡编号、模式、胜利或失败、星级、已用和剩余步数、剩余目标、使用的助推器和道具、用游戏内货币购买的步数，以及下文所述来自 Remote Config 的难度设置），打开的界面（地图、商店、水族馆、每日挑战），获得或花费的游戏内货币，装饰和奖励，每周目标，通知和提醒方面的选择（例如是否已授予权限，以及由哪条提醒打开了本游戏），提供并获得奖励的广告（仅记录广告位），完成的购买（仅记录商品名称，绝不包含您的付款信息），更改的设置（设置的名称），以及单次游戏的时长和次数。本游戏还会设置几项用户属性：安装后的天数、已通关的最高关卡、您是否购买过商品、您的通知权限状态和测试分组。Firebase 会自行添加技术数据：设备型号、操作系统和应用版本、语言、由您的网络连接推断出的国家或地区、首次启动的时间以及使用时长。Google 声明，Google Analytics 4 不会记录或存储 IP 地址。我们不开启 Google 信号，不为 Analytics 使用或收集 Android 广告 ID 或 iOS 广告标识符，不将 Analytics 与 Google Ads 或其他广告产品关联，也不设置用户 ID。广告存储、广告用户数据和广告个性化的同意信号均设为拒绝。</li>
+<li><strong>Firebase Crashlytics。</strong> 当本游戏崩溃或遇到未处理的错误时，Crashlytics 会发送堆栈跟踪、当时应用的状态、设备详细信息（例如型号、操作系统版本、内存和存储空间）、Crashlytics 安装标识符（由 SDK 生成的随机数字）以及 Firebase 安装标识符。对于某些原生崩溃，会临时读取内存转储以生成报告，随后将其丢弃。如果您拒绝、撤回同意或使用“删除本地数据”，已保存在您设备上但尚未发送的崩溃报告会被删除。</li>
+<li><strong>Firebase Remote Config。</strong> 本游戏启动时，并且最多每 3 小时一次，会向 Firebase 请求几项设置。请求包含 Firebase 安装标识符、应用名称和版本、语言、国家或地区代码、时区、操作系统版本、SDK 版本，并且由于 Analytics 已开启，还包含上述用户属性和首次启动的时间。您的 IP 地址会像任何互联网请求一样到达 Google。我们仅将 Remote Config 用于两件事：按固定的小幅度调整某个战役关卡的步数（根据玩家的总体表现来平衡难度），以及在某项功能出现问题时将其关闭。它无法开启新功能、更改价格，也无法因您是谁而向您展示不同的内容。这些设置保存在您的设备上，并重复使用，直到下一次请求成功为止。</li>
+<li><strong>Firebase 安装标识符。</strong> Firebase 会为本游戏的每次安装创建一个随机标识符。它不会指明您的身份，Google 表示它不能唯一识别某个人或某台实体设备。Crashlytics 和 Remote Config 会使用它。如果您拒绝或撤回同意，或使用“删除本地数据”，本游戏会请求 Firebase 将其删除，并移除已保存的设置。随后 Google 会在 180 天内从其在线系统和备份系统中删除与之关联的数据。只有在您再次给予同意后，才会创建新的标识符。</li>
+</ol>
+<p>我们使用这些数据来查找并修复程序错误、让关卡更公平并改进本游戏。我们不会收集您的姓名、电子邮件、电话号码、联系人、照片、麦克风数据或精确位置，也不会将这些数据用于广告。</p>
+<h3>5.4 同意管理工具</h3>
+<p>在某些地区（例如欧洲经济区、英国和瑞士），在广告或数据分析启动之前，本游戏会展示来自 Google 用户消息平台（User Messaging Platform）的同意提示。每次您打开本游戏时，它都会检查您的同意信息是否需要更新，仅当您所在地区的规则要求时才会再次展示该提示。只有在同意步骤运行之后才会请求广告。如果您接受，广告可以被个性化。如果您拒绝，您仍会看到广告，但本游戏会将请求标记为非个性化（见第 5.2 节）。如果无法加载同意信息，例如因为您处于离线状态，本游戏在能够加载之前不会请求广告。使用数据、崩溃报告和远程设置（第 5.3 节）遵循您的选择：如果您拒绝，则不会发送，也不会请求远程设置。Google 会将您的选择保存在您的设备上，因此不会在每次启动时都询问您。您可以随时在设置，隐私，“广告选择”中更改您的选择（在要求提供该选项的地区）。</p>
+<h3>5.5 iOS 跟踪权限</h3>
+<p>在 iOS 上，本游戏会在首次请求广告之前询问一次，是否可以使用您的广告标识符向您展示个性化广告，Apple 将此称为跟踪（App 跟踪透明度提示）。如果您选择否，iOS 不会向本游戏提供您的广告标识符，广告也不会个性化。在欧洲经济区、英国和瑞士，您可能会同时看到此提示和第 5.4 节中的同意提示。它们是相互独立的选择。iOS 每次安装只显示一次该提示，您可以随时在 iOS 设置，隐私与安全性，跟踪中更改您的答案。本游戏只记录它已经询问过（见第 3 节）。</p>
+<h3>5.6 评价</h3>
+<p>本游戏可能会请求应用商店展示一次其标准的评分界面。您的评分以及您撰写的任何文字，均由应用商店而非本游戏处理。</p>
+<h3>5.7 链接</h3>
+<p>指向本政策、我们的条款和客服支持的链接会在您的浏览器中打开。这些网站有各自的政策。</p>
+<h2 id="privacy-6">6. 我们不会做的事</h2>
+<ol>
+<li>我们不会要求您创建账号。</li>
+<li>我们不会出售您的个人信息。我们不会在知情的情况下收集未满 13 岁儿童的个人信息。</li>
+<li>我们不会访问您的联系人、照片、文件、相机、麦克风、日历或精确位置。</li>
+<li>我们不会发送推广通知。提醒通知绝不会宣传购买。</li>
+<li>我们不会询问您的年龄，也不会保存任何年龄设置。</li>
+<li>我们不会为 Firebase 使用 Google 信号或广告标识符，也不会将 Firebase 与广告产品关联（见第 5.3 节）。</li>
+</ol>
+<h2 id="privacy-7">7. 您的选择和权利</h2>
+<ol>
+<li><strong>删除本地数据。</strong> 设置，隐私，“删除本地数据”会清除您设备上的进度和设置，重置 Firebase 分析标识符，删除尚未发送的崩溃报告，并请求 Firebase 删除安装标识符（见第 5.3 节）。它不会清除广告或数据分析服务提供商已经持有的数据；如需清除，请使用第 5 项。</li>
+<li><strong>广告。</strong> 在展示同意提示的地方，您可以在设置，隐私，“广告选择”中接受、拒绝或更改您的选择。在 iOS 上，您可以在系统提示中拒绝跟踪，并可在设置，隐私与安全性，跟踪中随时更改。在 Android 上，您可以在设置，隐私，广告中重置或删除您的广告 ID。</li>
+<li><strong>通知。</strong> 在您允许之前，提醒保持关闭。您可以在本游戏的设置或设备设置中将其关闭。</li>
+<li><strong>使用数据。</strong> 在法律要求取得同意的地方，您接受之前不会收集 Firebase 使用数据、崩溃报告和远程设置，如果您拒绝或撤回同意，则会停止收集。撤回时，本游戏还会删除本地副本，并请求 Firebase 删除安装标识符（见第 5.3 节）。您可以在设置，隐私，“广告选择”中（在显示该选项的地方），或通过同一界面中的开关“共享使用数据”撤回同意。您也可以通过卸载本游戏来停止以上全部收集。</li>
+<li><strong>您的法定权利。</strong> 根据您所在地的不同（例如欧洲经济区、英国、瑞士、巴西、加利福尼亚州及美国其他州），您可能有权询问、查阅、更正、删除、转移个人信息或反对其使用，有权撤回同意，也有权向您所在地的数据保护机构投诉。我们无法通过本游戏得知您是谁，因此为了回应您的请求，我们可能需要您提供显示在设置，隐私中的“客服 ID”（它是您这次安装对应的 Google Analytics 应用实例标识符，Google 可以用它删除与其关联的分析数据；仅在共享使用数据期间显示），或提供其他能让我们找到您的记录的信息，而且我们也可能无法找到任何记录。请写信至 <a href="mailto:contact@bringnextinc.com">contact@bringnextinc.com</a>。我们会在 30 日内答复。</li>
+<li><strong>请勿出售或共享（加利福尼亚州及美国其他一些州）。</strong> 根据美国各州法律，我们的广告提供商进行的个性化广告可能构成“共享”或定向广告。请使用设置，隐私中的隐私选择选项，或写信给我们，以选择退出。</li>
+</ol>
+<h2 id="privacy-8">8. 法律依据（欧洲经济区、英国、瑞士）</h2>
+<p>在数据离开您设备的情况下，我们依据以下理由：个性化广告和非必要使用数据分析依据同意（GDPR 第 6 条第 1 款 a 项，以及关于访问您设备上信息的电子隐私规则）；对于 Firebase Analytics、Crashlytics 和 Remote Config（它们会在您的设备上读取并存储标识符），本游戏对这三项适用同一项同意，因此在要求同意的所有地方我们都依据同意，并且不依据合法利益；购买依据合同的履行，该事项由应用商店处理。</p>
+<h2 id="privacy-9">9. 国际传输</h2>
+<p>Google 在美国以及 Google 或其次级处理者运营所在的其他国家处理 Firebase 数据。Google 声明其遵守欧盟与美国及瑞士与美国数据隐私框架，以及欧盟与美国框架的英国延伸，并且在其数据处理条款中也使用标准合同条款。Google 在 <a href="https://firebase.google.com/terms/subprocessors" rel="noopener">https://firebase.google.com/terms/subprocessors</a> 列出 Firebase 的次级处理者。 第 5 节中列明的其他服务提供商也可能会在美国及其他国家处理数据；它们依据欧盟与美国数据隐私框架和/或标准合同条款。</p>
+<h2 id="privacy-10">10. 数据保存多长时间</h2>
+<ol>
+<li>在您的设备上：直到您删除本地数据或卸载本游戏为止。</li>
+<li>Firebase Analytics：事件数据保存 14 个月，这是 Google 为此类属性提供的最长期限。Google 据此生成且不含标识符的报告可能保存更久。</li>
+<li>Firebase Crashlytics：崩溃数据保存 90 天，此后 Google 开始将其从在线系统和备份系统中删除。</li>
+<li>Firebase 安装标识符和 Remote Config 数据：直到本游戏将该标识符删除为止（在您拒绝或撤回同意，或使用“删除本地数据”时）；随后 Google 会在 180 天内删除与之关联的数据。如果卸载本游戏而没有执行上述操作，Google 会在一段不活跃期后删除安装标识符（撰写本文时为 270 天）。</li>
+<li>广告提供商的数据：按提供商自己的政策保存，链接见第 5.2 节。</li>
+</ol>
+<h2 id="privacy-11">11. 安全</h2>
+<p>由上述 SDK 发送的数据通过加密连接传输（Firebase 使用 HTTPS）。本地存档数据保存在本游戏在您设备上的私有存储空间中，除操作系统提供的保护外，未做额外加密。请为您的设备设置锁屏保护。</p>
+<h2 id="privacy-12">12. 变更</h2>
+<p>如果我们对本政策作出重要变更，我们会更新上方的日期，并在法律要求的情况下在本游戏内通知您。</p>
+<h2 id="privacy-13">13. 联系我们</h2>
+<p>BringNext LLC，1021 E Lincolnway #9340, Cheyenne, WY 82001, United States。电子邮件：<a href="mailto:contact@bringnextinc.com">contact@bringnextinc.com</a>。</p>
+    </div>
+  </div>
+</main>
+
+<footer class="footer section">
+  <div class="footer-links">
+    <a href="mailto:contact@bringnextinc.com">mail</a>
+    <a href="https://github.com/bringhacks" target="_blank" rel="noopener noreferrer">GitHub</a>
+  </div>
+  <div class="footer-meta">BringNext LLC &bull; &copy; 2026 &bull; All rights reserved</div>
+  <div class="footer-meta">
+    <a href="../../../contact.html">Contact Us</a> &bull; <a href="../../../about.html">About</a> &bull; <a href="../../../projects.html">Projects</a> &bull; <a href="../../../privacy.html">Privacy</a> &bull; <a href="../../../terms.html">Terms</a>
+  </div>
+</footer>
+</body>
+</html>
